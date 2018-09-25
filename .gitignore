@@ -20,14 +20,4 @@
 out/
 target/
 .idea_modules/
-.gitignore
-.gradle/
-.idea/gradle.xml
-.idea/misc.xml
-.idea/workspace.xml
-build.gradle
-gradle/
-gradlew
-gradlew.bat
-settings.gradle
-src/
+
