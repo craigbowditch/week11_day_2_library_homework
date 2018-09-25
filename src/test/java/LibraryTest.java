@@ -10,7 +10,7 @@ public class LibraryTest {
     
     @Before
     public void before(){
-        library = new Library();
+        library = new Library(2);
         book = new Book("Catcher in the rye", "JD Salinger", "Wanky");
     }
 
@@ -23,5 +23,13 @@ public class LibraryTest {
     public void canAddBookToLibrary() {
         library.addBook(book);
         assertEquals(1, library.bookCount());
+    }
+
+    @Test
+    public void cannotAddBookIfStockIsFull() {
+        library.addBook(book);
+        library.addBook(book);
+        library.addBook(book);
+        assertEquals(2, library.bookCount());
     }
 }
