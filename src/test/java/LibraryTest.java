@@ -26,6 +26,11 @@ public class LibraryTest {
     }
 
     @Test
+    public void hasACapacity() {
+        assertEquals(2, library.getCapacity());
+    }
+
+    @Test
     public void cannotAddBookIfStockIsFull() {
         library.addBook(book);
         library.addBook(book);

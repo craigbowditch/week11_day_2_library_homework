@@ -10,6 +10,10 @@ public class Library {
         this.capacity = capacity;
     }
 
+    public int getCapacity() {
+        return capacity;
+    }
+
     public int bookCount() {
         return this.stock.size();
     }
